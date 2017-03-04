@@ -14,6 +14,7 @@ namespace MazeGenerator
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
+		private System.Windows.Forms.PictureBox pictureBox1;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -36,12 +37,30 @@ namespace MazeGenerator
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.SuspendLayout();
+			// 
+			// pictureBox1
+			// 
+			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(800, 800);
+			this.pictureBox1.TabIndex = 0;
+			this.pictureBox1.TabStop = false;
 			// 
 			// MainForm
 			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "MazeGenerator";
+			this.ClientSize = new System.Drawing.Size(800, 800);
+			this.Controls.Add(this.pictureBox1);
 			this.Name = "MainForm";
+			this.Text = "MazeGenerator";
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			this.ResumeLayout(false);
+
 		}
 	}
 }
