@@ -1,2 +1,3 @@
 # MazeGenerator
-# Premier projet test d'utilisation de Git
+dev/integrationCanvas
+Intération de la base du canvas
