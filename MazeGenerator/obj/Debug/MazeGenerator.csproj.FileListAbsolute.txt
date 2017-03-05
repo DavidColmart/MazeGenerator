@@ -4,3 +4,5 @@ C:\Users\Utilisateur\MazeGenerator\MazeGenerator\bin\Debug\MazeGenerator.pdb
 C:\Users\Utilisateur\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.csprojResolveAssemblyReference.cache
 C:\Users\Utilisateur\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.exe
 C:\Users\Utilisateur\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.pdb
+C:\Users\Utilisateur\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.MainForm.resources
+C:\Users\Utilisateur\MazeGenerator\MazeGenerator\obj\Debug\MazeGenerator.csproj.GenerateResource.Cache

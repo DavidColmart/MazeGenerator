@@ -14,7 +14,8 @@ namespace MazeGenerator
 		/// Designer variable used to keep track of non-visual components.
 		/// </summary>
 		private System.ComponentModel.IContainer components = null;
-		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.PictureBox Canvas;
+		private System.Windows.Forms.Timer GameTimer;
 		
 		/// <summary>
 		/// Disposes resources used by the form.
@@ -37,28 +38,34 @@ namespace MazeGenerator
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.pictureBox1 = new System.Windows.Forms.PictureBox();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+			this.components = new System.ComponentModel.Container();
+			this.Canvas = new System.Windows.Forms.PictureBox();
+			this.GameTimer = new System.Windows.Forms.Timer(this.components);
+			((System.ComponentModel.ISupportInitialize)(this.Canvas)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// pictureBox1
+			// Canvas
 			// 
-			this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(800, 800);
-			this.pictureBox1.TabIndex = 0;
-			this.pictureBox1.TabStop = false;
+			this.Canvas.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.Canvas.Location = new System.Drawing.Point(0, 0);
+			this.Canvas.Name = "Canvas";
+			this.Canvas.Size = new System.Drawing.Size(800, 800);
+			this.Canvas.TabIndex = 0;
+			this.Canvas.TabStop = false;
+			// 
+			// GameTimer
+			// 
+			this.GameTimer.Tick += new System.EventHandler(this.GameTimerTick);
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(800, 800);
-			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.Canvas);
 			this.Name = "MainForm";
 			this.Text = "MazeGenerator";
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.Canvas)).EndInit();
 			this.ResumeLayout(false);
 
 		}
